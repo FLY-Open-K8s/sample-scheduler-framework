@@ -2,6 +2,6 @@ FROM debian:stretch-slim
 
 WORKDIR /
 
-COPY sample-scheduler-framework /usr/local/bin
+COPY bin/sample_scheduler_framework_linux /usr/local/bin
 
 CMD ["sample-scheduler-framework"]
