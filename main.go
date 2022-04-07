@@ -14,6 +14,7 @@ func main() {
 	rand.Seed(time.Now().UTC().UnixNano())
 
 	command := app.NewSchedulerCommand(
+		// 注册插件
 		app.WithPlugin(plugins.Name, plugins.New),
 	)
 

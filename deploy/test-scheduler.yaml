@@ -12,6 +12,7 @@ spec:
       labels:
         app: test-scheduler
     spec:
+      # 手动指定了一个 schedulerName 的字段，将其设置成上面我们自定义的调度器名称 sample-scheduler
       schedulerName: sample-scheduler
       containers:
       - image: nginx
